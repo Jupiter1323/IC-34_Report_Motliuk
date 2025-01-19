@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    min-height: 150px;
+}
+
+.image-case {
+    display: inline-block; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-text h1 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.header-text h2 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.header-text p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.photo-student {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    width: 120px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.photo-student img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.menu button {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    white-space: nowrap;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.menu-row {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sidebar {
+    flex: 0.5;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.sidebar button.medium {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sidebar button.small {
+    font-size: 12px;
+    margin-left: 30px;
+    width: calc(100% - 30px);
+}
+
+.main {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main .content {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    padding-left: 20px; 
+    padding-top: 10px;
+}
+
+.menu .active {
+    font-size: 18px;
+}
+
+.sidebar .active {
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.code-block {
+    font-family: "Courier New", monospace;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left; 
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.code-block code {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.screenshot-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.screenshot-container img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .screenshot-container {
+        margin: 10px 0;
+    }
+
+    .menu button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .sidebar button {
+        font-size: 12px;
+    }
+
+    .main .content {
+        padding: 15px;
+    }
+}
