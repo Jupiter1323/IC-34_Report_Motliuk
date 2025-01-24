@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+    </header>
+    <main>
     <div class="container">
         <!-- Header -->
         <div class="header">
@@ -25,8 +28,8 @@
             <div class="menu-row">
                 <button onclick="selectLab(1)" id="lab1">Лабораторна робота №1</button>
                 <button onclick="selectLab(2)" id="lab2">Лабораторна робота №2</button>
-                <button>Лабораторна робота №3</button>
-                <button>Лабораторна робота №4</button>
+                <button onclick="selectLab(3)" id="lab3">Лабораторна робота №3</button>
+                <button onclick="selectLab(4)" id="lab4">Лабораторна робота №4</button>
                 <button>Лабораторна робота №5</button>
             </div>
             <div class="menu-row">
@@ -57,9 +60,30 @@
                 <button class="small" onclick="showContent(4, 'Селектор тегу')" id="section4">Селектор тегу</button>
                 <button class="small" onclick="showContent(5, 'Селектор класу')" id="section5">Селектор класу</button>
                 <button class="small" onclick="showContent(6, 'Селектор ідентифікаторів')" id="section6">Селектор ідентифікаторів</button>
-                <button class="medium" onclick="showContent(7, 'Інші селектори')" id="section7">Інші селектори</button>
+                <button class="small" onclick="showContent(7, 'Інші селектори')" id="section7">Інші селектори</button>
                 <button class="medium" onclick="showContent(8, 'CSS: Шрифти, Текст, Таблиці, Фон, Контур, Списки, CSS Просунутий')" id="section8">CSS: Шрифти, Текст, Таблиці, Фон, Контур, Списки, CSS Просунутий</button>
                 <button class="medium" onclick="showContent(9, 'ВИСНОВКИ')" id="section9">ВИСНОВКИ</button>
+            </div>
+
+            <div id="sidebar3" class="sidebar" style="display: none;">
+                <!-- Sidebar for Lab 3 -->
+                <button class="medium" onclick="showContent(1, 'Тема Мета Місце ЛР3 Місце розташування сайту, звіту')" id="section1">Тема Мета Місце ЛР3 Місце розташування сайту, звіту</button>
+                <button class="medium" onclick="showContent(2, 'ЗАВДАННЯ №1')" id="section2">ЗАВДАННЯ №1</button>
+                <button class="small" onclick="showContent(3, 'Фіксована таблична верстка')" id="section3">Фіксована таблична верстка</button>
+                <button class="small" onclick="showContent(4, 'Гумова таблична верстка')" id="section4">Гумова таблична верстка</button>
+                <button class="small" onclick="showContent(5, 'Фіксована блокова верстка')" id="section5">Фіксована блокова верстка</button>
+                <button class="small" onclick="showContent(6, 'Гумова блокова верстка')" id="section6">Гумова блокова верстка</button>
+                <button class="medium" onclick="showContent(7, 'ЗАВДАННЯ №3 FLEXBOX')" id="section7">ЗАВДАННЯ №3 FLEXBOX</button>
+                <button class="medium" onclick="showContent(8, 'ВИСНОВКИ')" id="section8">ВИСНОВКИ</button>
+            </div>
+
+            <div id="sidebar4" class="sidebar" style="display: none;">
+                <!-- Sidebar for Lab 4 -->
+                <button class="medium" onclick="showContent(1, 'Тема Мета Місце ЛР4 Місце розташування сайту, звіту')" id="section1">Тема Мета Місце ЛР3 Місце розташування сайту, звіту</button>
+                <button class="medium" onclick="showContent(2, 'Десктопна версія')" id="section2">Десктопна версія</button>
+                <button class="medium" onclick="showContent(3, 'Планшетна версія')" id="section3">Планшетна версія</button>
+                <button class="medium" onclick="showContent(4, 'Мобільна версія')" id="section4">Мобільна версія</button>
+                <button class="medium" onclick="showContent(5, 'ВИСНОВКИ')" id="section5">ВИСНОВКИ</button>
             </div>
 
             <div class="main">
@@ -70,7 +94,9 @@
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
